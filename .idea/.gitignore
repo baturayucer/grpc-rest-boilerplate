@@ -12,6 +12,7 @@
 *.idea/
 *.target/
 *.iml
+workspace.xml
 
 # Package Files #
 *.jar
