@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.baturayucer.grpcservice.service;
+
+message LogRequest {
+    string logLevel = 1;
+    string logMessage = 2;
+}
+
+message LogResponse {
+    string logResponseMessage = 1;
+}
+
+service LogService {
+    rpc log(LogRequest) returns (LogResponse);
+}
