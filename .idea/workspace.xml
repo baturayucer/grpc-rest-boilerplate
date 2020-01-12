@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c685af8a-c4e7-45bd-a69b-c3ba2e5b9709" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="c685af8a-c4e7-45bd-a69b-c3ba2e5b9709" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baturayucer/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baturayucer/demo/controller/RestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baturayucer/demo/dto/LogDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baturayucer/demo/mapper/LogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baturayucer/demo/mapper/LogMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baturayucer/demo/model/LogModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baturayucer/demo/repository/LogDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baturayucer/demo/service/rest/LogRestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baturayucer/demo/service/rest/LogRestServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/baturayucer/demo/DemoApplicationTests.java" beforeDir="false" />
+    </list>
+    <list id="717264c7-3924-495d-8bfa-91a8c1cef3ea" name="nocommit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,22 +24,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TQ5swZDo2cc4Iar9R9r5pcrcXh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -38,18 +44,40 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c685af8a-c4e7-45bd-a69b-c3ba2e5b9709" name="Default Changelist" comment="" />
+      <changelist id="717264c7-3924-495d-8bfa-91a8c1cef3ea" name="nocommit" comment="" />
       <created>1573379689012</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573379689012</updated>
       <workItem from="1573379693744" duration="289000" />
+      <workItem from="1578839205193" duration="783000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1578839717494</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578839717494</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -60,10 +88,30 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="269" y="52" key="CommitChangelistDialog2" timestamp="1578839717115">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="269" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1578839717115" />
+    <state x="570" y="373" key="VCS.ChangelistChooser" timestamp="1578839624840">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="570" y="373" key="VCS.ChangelistChooser/0.0.1440.900@0.0.1440.900" timestamp="1578839624840" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1578839726221">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1578839726221" />
   </component>
 </project>
