@@ -5,7 +5,6 @@ import com.baturayucer.grpcservice.service.LogRequest;
 import com.baturayucer.grpcservice.service.LogResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Mapper
 public interface LogMapper {
