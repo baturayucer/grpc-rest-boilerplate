@@ -3,4 +3,4 @@ Communication between rest and gRPC services boilerplate
 
 * Design:
 
-![Architecture](grpc-client/src/main/resources/img/Architecture.png){width=450px}
+<img src="drawing.jpg" alt="Design" width="450"/>
