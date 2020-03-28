@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/log/api")
+@RestController
 public class LogRestController {
 
     LogService logService;
 
     @Autowired
-    LogRestController(LogService logService) {
+    public LogRestController(LogService logService) {
         this.logService = logService;
     }
 

@@ -2,19 +2,24 @@ package com.baturayucer.grpcclient.service;
 
 import com.baturayucer.grpcclient.mapper.LogMapper;
 import com.baturayucer.grpcclient.model.LogDto;
+import com.baturayucer.proto.service.LogRequest;
+import com.baturayucer.proto.service.LogResponse;
+import com.baturayucer.proto.service.LogServiceGrpc;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import com.baturayucer.grpcservice.service.LogRequest;
-import com.baturayucer.grpcservice.service.LogResponse;
-import com.baturayucer.grpcservice.service.LogServiceGrpc;
+import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;
 
 @Service
 public class LogServiceImpl implements LogService {
+
+    LogMapper logMapper = Mappers.getMapper(LogMapper.class);
+
     @Override
     public LogDto sendLog(LogDto logRequest) {
 
-        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 6565)
+        ManagedChannel channel = ManagedChannelBuilder
+                .forAddress("localhost", 6565)
                 .usePlaintext()
                 .build();
 
@@ -29,7 +34,6 @@ public class LogServiceImpl implements LogService {
         System.out.println("Log Response:" + logResponse);
 
         channel.shutdown();
-
-        return LogMapper.INSTANCE.toLogDto(logResponse);
+        return logMapper.toLogDto(logResponse);
     }
 }

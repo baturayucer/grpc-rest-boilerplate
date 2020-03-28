@@ -1,35 +1,33 @@
 package com.baturayucer.grpcservice.service;
 
-import com.baturayucer.grpcservice.dao.LogDao;
+import com.baturayucer.grpcservice.dao.LogRepository;
 import com.baturayucer.grpcservice.mapper.LogMapper;
 import com.baturayucer.proto.service.LogRequest;
-import com.baturayucer.proto.service.LogResponse;
-import com.baturayucer.proto.service.LogServiceGrpc;
-import io.grpc.stub.StreamObserver;
+import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class LogServiceImpl extends LogServiceGrpc.LogServiceImplBase implements LogService {
+public class LogServiceImpl implements LogService {
+
+    private LogRepository logRepository;
 
     @Autowired
-    private LogDao logDao;
+    LogServiceImpl(LogRepository logRepository) {
+        this.logRepository = logRepository;
+    }
+
+    private LogMapper logMapper = Mappers.getMapper(LogMapper.class);
 
     @Override
-    public void log(LogRequest request, StreamObserver<LogResponse> responseObserver) {
+    public LogRequest log(LogRequest request) {
 
         try {
-            logDao.save(LogMapper.INSTANCE.toLogEntity(request));
+            logRepository.save(logMapper.toLogEntity(request));
+            return request;
         } catch (Exception e) {
             e.printStackTrace();
+            return null;
         }
-
-        LogResponse logResponse = LogResponse.newBuilder()
-                                        .setLogResponseMessage(
-                                                "Log has been created with log message: "
-                                                + request.getLogMessage())
-                                        .build();
-        responseObserver.onNext(logResponse);
-        responseObserver.onCompleted();
     }
 }
